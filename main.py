@@ -1,5 +1,6 @@
 # This is my first snake game! let's goooooooo!!!!
 
+
 import torch
 from dalle2_pytorch import Unet, DALLE2, Decoder, DiffusionPriorNetwork, DiffusionPrior, CLIP
 from torchvision.utils import save_image
@@ -321,3 +322,19 @@ images = dalle2(texts).cuda()  # (1, 3, 256, 256)
 
 img1 = images[0]
 save_image(img1, 'img1.png')
+
+
+# conda create --name cudaenv
+# conda activate cudaenv
+# conda install cudatoolkit
+# pip install dalle2_pytorch
+# pip uninstall torch
+# pip uninstall torchvision
+# pip uninstall torchaudio
+# pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+# pip install -U matplotlib
+# pip install pytorch-lightning
+# pip install opencv-python
+# pip install -U albumentations
+# pip install Cython
+# pip install git+https://github.com/philferriere/cocoapi.git#egg=pycocotools^&subdirectory=PythonAPI
