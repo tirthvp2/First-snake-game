@@ -1,3 +1,5 @@
+# This is my first snake game! let's goooooooo!!!!
+
 import torch
 from dalle2_pytorch import Unet, DALLE2, Decoder, DiffusionPriorNetwork, DiffusionPrior, CLIP
 from torchvision.utils import save_image
